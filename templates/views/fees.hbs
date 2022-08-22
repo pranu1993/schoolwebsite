@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Saira:wght@200&display=swap" rel="stylesheet">
+    <title>Submit Your Fees</title>
+    <style>
+        *{margin:0; 
+    
+    padding:0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Saira', sans-serif;
+   
+   
+}
+div{
+    background-image: linear-gradient(rgb(205, 120, 120),white);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:300px;
+    height:600px;
+    margin-left: 450px;
+    margin-top:50px;
+    border: 5px solid black;
+    padding:12px;
+    font-weight:bold;
+
+}
+input{
+    border: 1px solid blue;
+    padding:5px;
+    font-weight: bold;
+}
+button{
+    font-weight:bolder;
+    color:rgb(218, 103, 21);
+    border: 3px solid black;
+    margin:5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <form action="/feesubmit" method="POST">
+    <div >
+        <h3>Submit Your Fees</h3><br>
+
+        <label>Full Name</label><br>
+        <input type ="text" name="fullname" placeholder="write your fullname"><br><br>
+        <label>Class Name</label><br>
+        <input type="text" name="classname" placeholder="enter your class name"><br><br>
+        <label>Email</label><br>
+        <input type="text" name="'email" placeholder="enter your email id"><br><br>
+        <label>Enter Amount</label><br>
+        <input type="number" name="fees" placeholder=" Enter your fees amount"><br><br>
+
+        <button value="Fees">Pay Now</button>
+    
+
+        </form>
+
+
+
+
+    </div>
+</body>
+</html>

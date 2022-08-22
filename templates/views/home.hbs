@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            justify-content: center;
+            text-align: center;
+            background-color: aqua;
+
+        }
+        textarea{
+            border:4px solid rgb(30, 5, 153);
+            margin:20px;
+           height:100px;
+           width:180px;
+            background-color: beige;
+
+        }
+        .smt{
+            padding:5px;
+            border: 1px solid red;
+            font-weight: 700;
+
+        }
+        .smt:hover{
+            background-color: yellow;
+            
+        }
+
+    </style>
+</head>
+<body>
+<form action="/message" method="POST">
+<div>
+<textarea  name="txtmsg" placeholder="Write your message"> </textarea><br>
+<input class="smt" type="submit" name="btnSave" value="Save"/>
+</div>
+</form>
+    
+</body>
+</html>
